@@ -12,7 +12,7 @@ public class Deporte {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int idDeporte;
+	private int iddeporte;
 	private String nombre;
 	
 	public int getIdDeporte() {
