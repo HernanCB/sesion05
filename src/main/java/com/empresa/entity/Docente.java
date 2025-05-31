@@ -3,6 +3,7 @@ package com.empresa.entity;
 import java.util.Date;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Column;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -18,6 +19,7 @@ public class Docente {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "iddocente")
 	private int idDocente;
 	private String nombre;
 	private String dni;
