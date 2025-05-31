@@ -23,9 +23,12 @@ public class Docente {
 	private int idDocente;
 	private String nombre;
 	private String dni;
+
+	@Column(name = "estado", columnDefinition = "char(1)")
 	private int estado;
 
 	@Temporal(TemporalType.TIMESTAMP)
+	@Column(name = "fechaRegistro")
 	private Date fechaRegistro;
 	
 	@ManyToOne
